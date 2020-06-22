@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>this is title</title>
+  </head>
+  <body>
+    hello world
+    {% for acc in insert %}
+    {{ acc.name }}
+    {{ acc.date }}
+    {% endfor %}
+    <img src="{% static '/calculating.png' %}" alt="opps" >
+  </body>
+</html>
