@@ -20,6 +20,7 @@ from django.conf.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('name',views.name),
-    path('secondapp/',include('secondapp.urls'))
+    path('name', views.name),
+    path('secondapp/', include('secondapp.urls')),
+    path('third/', include('thirdappforms.urls')),
 ]
